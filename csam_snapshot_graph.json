@@ -1,0 +1,2735 @@
+﻿{
+    "metadata":  {
+                     "collectedAt":  "2025-10-27T09:17:57.0888327+05:30",
+                     "tool":  "Discover_CrossSubnet_WithGraph.ps1 (passive, optimized)"
+                 },
+    "asset":  {
+                  "fqdn":  "139572-P14S.corp.qualys.com",
+                  "domain":  "corp.qualys.com",
+                  "hostName":  "139572-P14S",
+                  "domainRole":  1
+              },
+    "raw":  {
+                "candidatePrefixes":  [
+                                          "192.168.224.0/20",
+                                          "172.29.128.0/20",
+                                          "10.118.12.0/24"
+                                      ],
+                "routes":  [
+                               {
+                                   "destination":  "192.168.224.0/20",
+                                   "nextHop":  "0.0.0.0",
+                                   "iface":  "Wi-Fi",
+                                   "metric":  256,
+                                   "routeProtocol":  null
+                               },
+                               {
+                                   "destination":  "172.29.128.0/20",
+                                   "nextHop":  "0.0.0.0",
+                                   "iface":  "vEthernet (WSL (Hyper-V firewall))",
+                                   "metric":  256,
+                                   "routeProtocol":  null
+                               },
+                               {
+                                   "destination":  "10.118.12.0/24",
+                                   "nextHop":  "0.0.0.0",
+                                   "iface":  "Ethernet 3",
+                                   "metric":  256,
+                                   "routeProtocol":  null
+                               },
+                               {
+                                   "destination":  "0.0.0.0/0",
+                                   "nextHop":  "10.118.12.1",
+                                   "iface":  "Ethernet 3",
+                                   "metric":  0,
+                                   "routeProtocol":  null
+                               },
+                               {
+                                   "destination":  "0.0.0.0/0",
+                                   "nextHop":  "192.168.224.1",
+                                   "iface":  "Wi-Fi",
+                                   "metric":  0,
+                                   "routeProtocol":  null
+                               }
+                           ],
+                "reverseDns":  [
+                                   {
+                                       "ip":  "172.29.128.1",
+                                       "ptr":  "139572-P14s.mshome.net",
+                                       "lastChecked":  "2025-10-27T09:17:57.0888327+05:30"
+                                   },
+                                   {
+                                       "ip":  "10.118.12.29",
+                                       "ptr":  "139572-P14s.corp.qualys.com",
+                                       "lastChecked":  "2025-10-27T09:17:57.0888327+05:30"
+                                   }
+                               ],
+                "listening":  [
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  49664,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "1916",
+                                      "processName":  "lsass",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  49668,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "1916",
+                                      "processName":  "lsass",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "10.118.12.29",
+                                      "localPort":  10001,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "10.118.12.29",
+                                      "localPort":  10002,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "10.118.12.29",
+                                      "localPort":  10003,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "10.118.12.29",
+                                      "localPort":  10004,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "10.118.12.29",
+                                      "localPort":  10005,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  53,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  5000,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  6000,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  6362,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  7000,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  7474,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  7687,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  7688,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "42092",
+                                      "processName":  "java",
+                                      "exePath":  "C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                      "exeSha256":  "DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  10001,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  10002,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  10003,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  10004,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  10005,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  11001,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "96056",
+                                      "processName":  "Neo4j Desktop",
+                                      "exePath":  "C:\\Program Files\\Neo4j Desktop\\Neo4j Desktop.exe",
+                                      "exeSha256":  "976A925C8024CCB74244D77B11E822AF34398DBC8E6D4F3A073A9FF087D38F73",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  12895,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "96056",
+                                      "processName":  "Neo4j Desktop",
+                                      "exePath":  "C:\\Program Files\\Neo4j Desktop\\Neo4j Desktop.exe",
+                                      "exeSha256":  "976A925C8024CCB74244D77B11E822AF34398DBC8E6D4F3A073A9FF087D38F73",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  49677,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "5188",
+                                      "processName":  "vpnagent",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  49682,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "8120",
+                                      "processName":  "acumbrellaagent",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  50586,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "23168",
+                                      "processName":  "Windsurf",
+                                      "exePath":  "C:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\Windsurf.exe",
+                                      "exeSha256":  "F12DA97EE9186B86958ACDC566106A5977E40C449E60FACD9D28C3F516930EF5",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  50587,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "14780",
+                                      "processName":  "language_server_windows_x64",
+                                      "exePath":  "c:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\resources\\app\\extensions\\windsurf\\bin\\language_server_windows_x64.exe",
+                                      "exeSha256":  "38C64769CDE123A07FA801A063B2F32CDF9EE2AD9643F1F954566FAC36CDD0F8",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  50594,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "14780",
+                                      "processName":  "language_server_windows_x64",
+                                      "exePath":  "c:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\resources\\app\\extensions\\windsurf\\bin\\language_server_windows_x64.exe",
+                                      "exeSha256":  "38C64769CDE123A07FA801A063B2F32CDF9EE2AD9643F1F954566FAC36CDD0F8",
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  53553,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "8120",
+                                      "processName":  "acumbrellaagent",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  62522,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "5188",
+                                      "processName":  "vpnagent",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "172.29.128.1",
+                                      "localPort":  10001,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "172.29.128.1",
+                                      "localPort":  10002,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "172.29.128.1",
+                                      "localPort":  10003,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "172.29.128.1",
+                                      "localPort":  10004,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "172.29.128.1",
+                                      "localPort":  10005,
+                                      "protocol":  "TCP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "21208",
+                                      "processName":  "agentid-service",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  1900,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "4744",
+                                      "processName":  "qcaps",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  1910,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "4744",
+                                      "processName":  "qcaps",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  3702,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "4744",
+                                      "processName":  "qcaps",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  49991,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "0.0.0.0",
+                                      "localPort":  55571,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  53,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  49989,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  49990,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "47500",
+                                      "processName":  "dnscryptproxy",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  52182,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "1916",
+                                      "processName":  "lsass",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  },
+                                  {
+                                      "localAddress":  "127.0.0.1",
+                                      "localPort":  55572,
+                                      "protocol":  "UDP",
+                                      "state":  "LISTEN",
+                                      "owningProcess":  "8120",
+                                      "processName":  "acumbrellaagent",
+                                      "exePath":  null,
+                                      "exeSha256":  null,
+                                      "interface":  null,
+                                      "source":  "netstat"
+                                  }
+                              ],
+                "gateways":  [
+                                 "10.118.12.1",
+                                 "192.168.224.1"
+                             ],
+                "neighbors":  [
+                                  {
+                                      "ipAddress":  "10.118.12.1",
+                                      "macAddress":  "B4-0C-25-E2-C0-52",
+                                      "interface":  "Ethernet 3",
+                                      "state":  5,
+                                      "lastSeen":  "2025-10-27T09:17:57.0888327+05:30"
+                                  },
+                                  {
+                                      "ipAddress":  "192.168.224.1",
+                                      "macAddress":  "00-1B-17-00-0C-14",
+                                      "interface":  "Wi-Fi",
+                                      "state":  4,
+                                      "lastSeen":  "2025-10-27T09:17:57.0888327+05:30"
+                                  }
+                              ],
+                "dnsCache":  [
+                                 {
+                                     "addresses":  [
+                                                       "172.29.128.1"
+                                                   ],
+                                     "name":  "139572-P14s.mshome.net"
+                                 },
+                                 {
+                                     "addresses":  [
+                                                       "10.118.1.21"
+                                                   ],
+                                     "name":  "IN02SV-DC01.corp.qualys.com"
+                                 },
+                                 {
+                                     "addresses":  [
+                                                       "10.118.1.22"
+                                                   ],
+                                     "name":  "in02sv-dc02.corp.qualys.com"
+                                 }
+                             ],
+                "interfaces":  [
+                                   {
+                                       "interfaceName":  "vEthernet (WSL (Hyper-V firewall))",
+                                       "ip":  "172.29.128.1",
+                                       "prefixLength":  20,
+                                       "netmask":  "255.255.240.0",
+                                       "cidr":  "172.29.128.1/20",
+                                       "interfaceIndex":  85
+                                   },
+                                   {
+                                       "interfaceName":  "Ethernet 3",
+                                       "ip":  "10.118.12.29",
+                                       "prefixLength":  24,
+                                       "netmask":  "255.255.255.0",
+                                       "cidr":  "10.118.12.29/24",
+                                       "interfaceIndex":  13
+                                   },
+                                   {
+                                       "interfaceName":  "Wi-Fi",
+                                       "ip":  "192.168.232.42",
+                                       "prefixLength":  20,
+                                       "netmask":  "255.255.240.0",
+                                       "cidr":  "192.168.232.42/20",
+                                       "interfaceIndex":  21
+                                   }
+                               ]
+            },
+    "graph":  {
+                  "edges":  [
+                                {
+                                    "to":  "service:UDP:52182",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:5000",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:10001",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  "listeninglistening",
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:49668",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:49990",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:49989",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:53553",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:6362",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:49991",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:11001",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Program Files\\Neo4j Desktop\\Neo4j Desktop.exe",
+                                                                           "hash:976A925C8024CCB74244D77B11E822AF34398DBC8E6D4F3A073A9FF087D38F73"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:49677",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:10005",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  "listeninglistening",
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:50586",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\Windsurf.exe",
+                                                                           "hash:F12DA97EE9186B86958ACDC566106A5977E40C449E60FACD9D28C3F516930EF5"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "iface:10.118.1.22",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "dnsname:in02sv-dc02.corp.qualys.com",
+                                                          "type":  "dns_name_resolves_to_ip",
+                                                          "evidence":  [
+                                                                           "dns-cache"
+                                                                       ],
+                                                          "score":  1
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "subnet:192.168.224.0/20",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_route",
+                                                          "evidence":  [
+                                                                           "route-table"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "iface:172.29.128.1",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "service:TCP:10004",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_interface",
+                                                          "evidence":  [
+                                                                           "interface-list"
+                                                                       ],
+                                                          "score":  1
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10003",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "dnsname:139572-P14s.mshome.net",
+                                                          "type":  "dns_name_resolves_to_ip",
+                                                          "evidence":  [
+                                                                           "dns-cache"
+                                                                       ],
+                                                          "score":  1
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10001",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10002",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10005",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:7688",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:10004",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  "listeninglistening",
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:6000",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:55571",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:1900",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "iface:10.118.12.29",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "service:TCP:10004",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_interface",
+                                                          "evidence":  [
+                                                                           "interface-list"
+                                                                       ],
+                                                          "score":  1
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10005",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10002",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10003",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "service:TCP:10001",
+                                                          "type":  "service_binds_to_interface",
+                                                          "evidence":  [
+                                                                           "socket-bind"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:7474",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:7000",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "iface:192.168.232.42",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_interface",
+                                                          "evidence":  [
+                                                                           "interface-list"
+                                                                       ],
+                                                          "score":  1
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:55572",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "gateway:10.118.12.1",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:0.0.0.0/0",
+                                                          "type":  "route_points_to_gateway",
+                                                          "evidence":  [
+                                                                           "route-table"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "iface:172.29.128.1",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "iface:192.168.232.42",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "iface:10.118.12.29",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:10003",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  "listeninglistening",
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:12895",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Program Files\\Neo4j Desktop\\Neo4j Desktop.exe",
+                                                                           "hash:976A925C8024CCB74244D77B11E822AF34398DBC8E6D4F3A073A9FF087D38F73"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:50587",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:c:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\resources\\app\\extensions\\windsurf\\bin\\language_server_windows_x64.exe",
+                                                                           "hash:38C64769CDE123A07FA801A063B2F32CDF9EE2AD9643F1F954566FAC36CDD0F8"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:3702",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:7687",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:C:\\Users\\vichaudhari\\.Neo4jDesktop\\distributions\\java\\zulu17.44.53-ca-jdk17.0.8.1\\bin\\java.exe",
+                                                                           "hash:DB5B234A875EAB080D7524BA604B2069D5993D3CAB950676B8C11783E44EAF7B"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "gateway:192.168.224.1",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "iface:172.29.128.1",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "iface:10.118.12.29",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:0.0.0.0/0",
+                                                          "type":  "route_points_to_gateway",
+                                                          "evidence":  [
+                                                                           "route-table"
+                                                                       ],
+                                                          "score":  2
+                                                      },
+                                                      {
+                                                          "from":  "iface:192.168.232.42",
+                                                          "type":  "interface_connected_gateway",
+                                                          "evidence":  [
+                                                                           "routes",
+                                                                           "neighbors"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:49664",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:62522",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:53",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "subnet:172.29.128.0/20",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_route",
+                                                          "evidence":  [
+                                                                           "route-table"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:50594",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "exe:c:\\Users\\vichaudhari\\AppData\\Local\\Programs\\Windsurf\\resources\\app\\extensions\\windsurf\\bin\\language_server_windows_x64.exe",
+                                                                           "hash:38C64769CDE123A07FA801A063B2F32CDF9EE2AD9643F1F954566FAC36CDD0F8"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:1910",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:49682",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "subnet:0.0.0.0/0",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_route",
+                                                          "evidence":  "route-table",
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "neighbor:10.118.12.1",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "iface:10.118.12.29",
+                                                          "type":  "interface_discovers_neighbor",
+                                                          "evidence":  [
+                                                                           "neighbor-cache"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "neighbor:192.168.224.1",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "iface:192.168.232.42",
+                                                          "type":  "interface_discovers_neighbor",
+                                                          "evidence":  [
+                                                                           "neighbor-cache"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:UDP:53",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "listening",
+                                                                           "route-known",
+                                                                           "firewall-allow"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  [
+                                                                           "listening"
+                                                                       ],
+                                                          "score":  3
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "iface:10.118.1.21",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "dnsname:IN02SV-DC01.corp.qualys.com",
+                                                          "type":  "dns_name_resolves_to_ip",
+                                                          "evidence":  [
+                                                                           "dns-cache"
+                                                                       ],
+                                                          "score":  1
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "subnet:10.118.12.0/24",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_has_route",
+                                                          "evidence":  [
+                                                                           "route-table"
+                                                                       ],
+                                                          "score":  2
+                                                      }
+                                                  ]
+                                },
+                                {
+                                    "to":  "service:TCP:10002",
+                                    "reachable":  [
+                                                      {
+                                                          "from":  "host:139572-P14S",
+                                                          "type":  "host_exposes_service",
+                                                          "evidence":  "listeninglistening",
+                                                          "score":  3
+                                                      },
+                                                      {
+                                                          "from":  "subnet:10.118.12.0/24",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:192.168.224.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      },
+                                                      {
+                                                          "from":  "subnet:172.29.128.0/20",
+                                                          "type":  "subnet_can_reach_service",
+                                                          "evidence":  [
+                                                                           "firewall-allow",
+                                                                           "listening",
+                                                                           "route-known"
+                                                                       ],
+                                                          "score":  5
+                                                      }
+                                                  ]
+                                }
+                            ],
+                  "nodes":  [
+                                {
+                                    "id":  "host:139572-P14S",
+                                    "type":  "host",
+                                    "name":  "139572-P14S",
+                                    "fqdn":  "139572-P14S.corp.qualys.com",
+                                    "domain":  "corp.qualys.com",
+                                    "collectedAt":  "2025-10-27T09:17:57.0888327+05:30"
+                                },
+                                {
+                                    "id":  "iface:172.29.128.1",
+                                    "type":  "interface",
+                                    "ip":  "172.29.128.1",
+                                    "cidr":  "172.29.128.1/20"
+                                },
+                                {
+                                    "id":  "iface:10.118.12.29",
+                                    "type":  "interface",
+                                    "ip":  "10.118.12.29",
+                                    "cidr":  "10.118.12.29/24"
+                                },
+                                {
+                                    "id":  "iface:192.168.232.42",
+                                    "type":  "interface",
+                                    "ip":  "192.168.232.42",
+                                    "cidr":  "192.168.232.42/20"
+                                },
+                                {
+                                    "id":  "neighbor:10.118.12.1",
+                                    "type":  "neighbor",
+                                    "ip":  "10.118.12.1",
+                                    "mac":  "B4-0C-25-E2-C0-52",
+                                    "interface":  "Ethernet 3",
+                                    "lastSeen":  "2025-10-27T09:17:57.0888327+05:30"
+                                },
+                                {
+                                    "id":  "neighbor:192.168.224.1",
+                                    "type":  "neighbor",
+                                    "ip":  "192.168.224.1",
+                                    "mac":  "00-1B-17-00-0C-14",
+                                    "interface":  "Wi-Fi",
+                                    "lastSeen":  "2025-10-27T09:17:57.0888327+05:30"
+                                },
+                                {
+                                    "id":  "service:TCP:49664",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  49664
+                                },
+                                {
+                                    "id":  "service:TCP:49668",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  49668
+                                },
+                                {
+                                    "id":  "service:TCP:10001",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  10001
+                                },
+                                {
+                                    "id":  "service:TCP:10002",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  10002
+                                },
+                                {
+                                    "id":  "service:TCP:10003",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  10003
+                                },
+                                {
+                                    "id":  "service:TCP:10004",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  10004
+                                },
+                                {
+                                    "id":  "service:TCP:10005",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  10005
+                                },
+                                {
+                                    "id":  "service:TCP:53",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  53
+                                },
+                                {
+                                    "id":  "service:TCP:5000",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  5000
+                                },
+                                {
+                                    "id":  "service:TCP:6000",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  6000
+                                },
+                                {
+                                    "id":  "service:TCP:6362",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  6362
+                                },
+                                {
+                                    "id":  "service:TCP:7000",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  7000
+                                },
+                                {
+                                    "id":  "service:TCP:7474",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  7474
+                                },
+                                {
+                                    "id":  "service:TCP:7687",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  7687
+                                },
+                                {
+                                    "id":  "service:TCP:7688",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  7688
+                                },
+                                {
+                                    "id":  "service:TCP:11001",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  11001
+                                },
+                                {
+                                    "id":  "service:TCP:12895",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  12895
+                                },
+                                {
+                                    "id":  "service:TCP:49677",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  49677
+                                },
+                                {
+                                    "id":  "service:TCP:49682",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  49682
+                                },
+                                {
+                                    "id":  "service:TCP:50586",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  50586
+                                },
+                                {
+                                    "id":  "service:TCP:50587",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  50587
+                                },
+                                {
+                                    "id":  "service:TCP:50594",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  50594
+                                },
+                                {
+                                    "id":  "service:TCP:53553",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  53553
+                                },
+                                {
+                                    "id":  "service:TCP:62522",
+                                    "type":  "service",
+                                    "protocol":  "TCP",
+                                    "port":  62522
+                                },
+                                {
+                                    "id":  "service:UDP:1900",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  1900
+                                },
+                                {
+                                    "id":  "service:UDP:1910",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  1910
+                                },
+                                {
+                                    "id":  "service:UDP:3702",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  3702
+                                },
+                                {
+                                    "id":  "service:UDP:49991",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  49991
+                                },
+                                {
+                                    "id":  "service:UDP:55571",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  55571
+                                },
+                                {
+                                    "id":  "service:UDP:53",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  53
+                                },
+                                {
+                                    "id":  "service:UDP:49989",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  49989
+                                },
+                                {
+                                    "id":  "service:UDP:49990",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  49990
+                                },
+                                {
+                                    "id":  "service:UDP:52182",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  52182
+                                },
+                                {
+                                    "id":  "service:UDP:55572",
+                                    "type":  "service",
+                                    "protocol":  "UDP",
+                                    "port":  55572
+                                },
+                                {
+                                    "id":  "dnsname:139572-P14s.mshome.net",
+                                    "type":  "dnsname",
+                                    "name":  "139572-P14s.mshome.net",
+                                    "addresses":  [
+                                                      "172.29.128.1"
+                                                  ]
+                                },
+                                {
+                                    "id":  "dnsname:IN02SV-DC01.corp.qualys.com",
+                                    "type":  "dnsname",
+                                    "name":  "IN02SV-DC01.corp.qualys.com",
+                                    "addresses":  [
+                                                      "10.118.1.21"
+                                                  ]
+                                },
+                                {
+                                    "id":  "dnsname:in02sv-dc02.corp.qualys.com",
+                                    "type":  "dnsname",
+                                    "name":  "in02sv-dc02.corp.qualys.com",
+                                    "addresses":  [
+                                                      "10.118.1.22"
+                                                  ]
+                                },
+                                {
+                                    "id":  "gateway:10.118.12.1",
+                                    "type":  "gateway",
+                                    "ip":  "10.118.12.1"
+                                },
+                                {
+                                    "id":  "gateway:192.168.224.1",
+                                    "type":  "gateway",
+                                    "ip":  "192.168.224.1"
+                                }
+                            ]
+              }
+}
